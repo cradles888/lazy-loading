@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lazy load</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="correctLayout.css">
+</head>
+
+<body>
+    <section class="preloader animate-pulse"><button type="button" class="preloader-button flex bg-indigo-500 ..." disabled> <svg class="mr-3 -ml-1 size-5 animate-spin text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> Processing…</button>
+    </section>
+    <header class="hidden">
+        <nav class="flex items-center justify-around">
+            <img src="https://img.freepik.com/premium-vector/sneakers-shoe-logo-design-vector-illustration-trending-youth-footwear-simple-funky-concept_557439-3397.jpg"
+                alt="logo" width="164px">
+            <section class="flex gap-5">
+                <a href="#">Каталог</a>
+                <a href="#">Акции</a>
+                <a href="#">Работа</a>
+            </section>
+            <a href="#">Личный кабинет</a>
+        </nav>
+    </header>
+    <main class="hidden">
+        <section class="welcome-block">
+            <section class="container roboto grid gap-5 text-slate-50 my-10">
+                <h1 class="text-7xl">Магазин</h1>
+                <p class="w-[33%] text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, odio
+                    natus nesciunt culpa molestias repudiandae ullam. Error praesentium natus, tenetur amet at aliquam
+                    quisquam velit qui quos, nisi enim dolorem!</p>
+            </section>
+        </section>
+        <section class="grid gap-10" id="blocks">
+            <section id="oneSection">
+            <section class="container flex  items-center">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+            </section>
+            <section class="justify-around flex items-center gap-[35vh] container">
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+            </section>
+            <section class="container flex  items-center">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+            </section>
+            <section class="justify-around flex items-center gap-[35vh] container">
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+            </section>
+            <section class="container flex  items-center">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+            </section>
+            <section class="justify-around flex items-center gap-[35vh] container">
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+            </section>
+            <section class="container flex  items-center">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+            </section>
+            <section class="justify-around flex items-center gap-[35vh] container">
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+            </section>
+            <section class="container flex  items-center">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+            </section>
+            <section class="justify-around flex items-center gap-[35vh] container">
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+            </section>
+            <section class="container flex  items-center">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+            </section>
+            <section class="justify-around flex items-center gap-[35vh] container">
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+            </section>
+            <section class="container flex  items-center">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+            </section>
+        </section>
+            <section id="twoSection" class="hidden">
+            <section class="justify-around flex items-center gap-[35vh] container">
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+            </section>
+            <section class="container flex  items-center">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+            </section>
+            <section class="justify-around flex items-center gap-[35vh] container">
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+            </section>
+            <section class="container flex  items-center">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+            </section>
+            <section class="justify-around flex items-center gap-[35vh] container">
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+            </section>
+            <section class="container flex  items-center">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+            </section>
+            <section class="justify-around flex items-center gap-[35vh] container">
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+            </section>
+            <section class="container flex  items-center">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+            </section>
+            <section class="justify-around flex items-center gap-[35vh] container">
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+            </section>
+            <section class="container flex  items-center">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+            </section>
+            <section class="justify-around flex items-center gap-[35vh] container">
+                <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+                <section class="grid gap-5">
+                    <h2 class="text-5xl">Виды кроссовок</h2>
+                    <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                        consectetur adipisicing elit. Quidem, illo
+                        ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                        distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+                </section>
+            </section>
+        </section>
+        <section id="threeSection" class="hidden">
+        <section class="justify-around flex items-center gap-[35vh] container">
+            <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+            <section class="grid gap-5">
+                <h2 class="text-5xl">Виды кроссовок</h2>
+                <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                    ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                    distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Quidem, illo
+                    ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                    distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+            </section>
+        </section>
+        <section class="container flex  items-center">
+            <section class="grid gap-5">
+                <h2 class="text-5xl">Виды кроссовок</h2>
+                <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                    ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                    distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Quidem, illo
+                    ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                    distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+            </section>
+            <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+        </section>
+        <section class="justify-around flex items-center gap-[35vh] container">
+            <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+            <section class="grid gap-5">
+                <h2 class="text-5xl">Виды кроссовок</h2>
+                <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                    ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                    distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Quidem, illo
+                    ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                    distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+            </section>
+        </section>
+        <section class="container flex  items-center">
+            <section class="grid gap-5">
+                <h2 class="text-5xl">Виды кроссовок</h2>
+                <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                    ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                    distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Quidem, illo
+                    ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                    distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+            </section>
+            <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+        </section>
+        <section class="justify-around flex items-center gap-[35vh] container">
+            <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+            <section class="grid gap-5">
+                <h2 class="text-5xl">Виды кроссовок</h2>
+                <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                    ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                    distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Quidem, illo
+                    ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                    distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+            </section>
+        </section>
+        <section class="container flex  items-center">
+            <section class="grid gap-5">
+                <h2 class="text-5xl">Виды кроссовок</h2>
+                <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                    ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                    distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Quidem, illo
+                    ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                    distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+            </section>
+            <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+        </section>
+        <section class="justify-around flex items-center gap-[35vh] container">
+            <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+            <section class="grid gap-5">
+                <h2 class="text-5xl">Виды кроссовок</h2>
+                <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                    ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                    distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Quidem, illo
+                    ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                    distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+            </section>
+        </section>
+        <section class="container flex  items-center">
+            <section class="grid gap-5">
+                <h2 class="text-5xl">Виды кроссовок</h2>
+                <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                    ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                    distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Quidem, illo
+                    ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                    distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+            </section>
+            <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+        </section>
+        <section class="justify-around flex items-center gap-[35vh] container">
+            <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+            <section class="grid gap-5">
+                <h2 class="text-5xl">Виды кроссовок</h2>
+                <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                    ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                    distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Quidem, illo
+                    ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                    distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+            </section>
+        </section>
+        <section class="container flex  items-center">
+            <section class="grid gap-5">
+                <h2 class="text-5xl">Виды кроссовок</h2>
+                <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                    ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                    distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Quidem, illo
+                    ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                    distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+            </section>
+            <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+        </section>
+        <section class="justify-around flex items-center gap-[35vh] container">
+            <img src="https://img.freepik.com/premium-vector/shoes_1271422-1538.jpg" alt="window">
+            <section class="grid gap-5">
+                <h2 class="text-5xl">Виды кроссовок</h2>
+                <p class="w-[70%] text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, illo
+                    ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                    distinctio quisquam atque quos, voluptates vero in! Illum! Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Quidem, illo
+                    ratione sed suscipit ipsum corporis numquam? Veniam dolorem earum laudantium quaerat laboriosam
+                    distinctio quisquam atque quos, voluptates vero in! Illum!</p>
+            </section>
+        </section>
+        </section>
+    </main>
+    <footer class="hidden">
+        <nav class="flex items-center justify-around border-t-2 pb-5">
+            <img src="https://img.freepik.com/premium-vector/sneakers-shoe-logo-design-vector-illustration-trending-youth-footwear-simple-funky-concept_557439-3397.jpg"
+                alt="logo" width="164px">
+            <section class="grid gap-5">
+                <a href="#">Каталог</a>
+                <a href="#">Акции</a>
+                <a href="#">Работа</a>
+            </section>
+            <a href="#">Личный кабинет</a>
+        </nav>
+    </footer>
+</body>
+</html>

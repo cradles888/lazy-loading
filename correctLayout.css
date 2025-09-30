@@ -1,0 +1,51 @@
+    .preloader {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        z-index: 10
+    }
+
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+    .roboto {
+        font-family: "Roboto", sans-serif;
+    }
+
+    .container {
+        box-sizing: border-box;
+        border: 0px solid transparent;
+        border-width: 7.5vh 22.5vh;
+    }
+
+    .welcome-block {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .welcome-block::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url('/1693.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50% 50%;
+        filter: brightness(65%);
+        z-index: 0;
+    }
+
+    .welcome-block>* {
+        position: relative;
+        z-index: 1;
+    }
+
+    .preloader-button {
+        padding: 20px 30px;
+        border-radius: 15px;
+        color: aliceblue;
+    }
